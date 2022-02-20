@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Nunito:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,400;0,500;1,400;1,500;1,600&family=Redressed&family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, rgba(152,24,244,1) 0%, rgba(9,62,121,1) 30%, rgba(221,0,249,1) 100%);
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    padding-top:5rem;
+}
+.add{
+    background-color: #00AAFF;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    top:20px;
+    padding: 1.2rem 2.4rem;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+.add:hover{
+    background-color: crimson;
+}
+.note{
+    background-color: #fff;
+    box-shadow: 0 5px 15px 0 rgba(255,255,255,0.8);
+    margin: 50px;
+    height: 440px;
+    width: 400px;
+    border-radius: 10px;
+}
+.note .tools{
+    background-color: #00AAFF;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.note .tools button{
+    background-color: transparent;
+    border: none;
+    color:#fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+.note .main{
+    background-color: #eee;
+    overflow: hidden;
+    height:400px;
+    width:100%;
+}
+.note textarea{
+    outline: none;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    border: none;
+    height: 400px;
+    width: 100%;
+    padding:8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .note .hidden{
+    display: none;
+  }
+
+  @media screen and (max-width: 500px) {
+    .note{
+        margin: 20px 10px 0 10px;
+    }
+  }
